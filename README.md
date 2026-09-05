@@ -21,3 +21,8 @@ Official frontend repository for **FusoCenter.com**.
 - Do not commit secrets or analytics IDs that have not been verified.
 - `harga_mulai = null` must never render as `Rp0`.
 - Featured Image is the canonical product hero when available; missing media must use a deliberate placeholder.
+## Deployment workflow
+
+- `main` → Vercel Production
+- `develop` → Vercel Preview
+- Production domain is connected only after Preview QA passes.
