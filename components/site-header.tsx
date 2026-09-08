@@ -8,7 +8,7 @@ export function SiteHeader() {
       <div className="site-header-inner">
         <Link className="brand-mark" href="/" aria-label="FusoCenter.com beranda">Fuso<span>Center</span>.com</Link>
         <nav className="desktop-nav" aria-label="Navigasi utama">
-          {primaryNavigation.map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
+          {primaryNavigation.map((item) => <a key={item.href + "-" + item.label} href={item.href}>{item.label}</a>)}
         </nav>
         <div className="header-cta">
           <CtaLink href={conversionNavigation[0].href} variant="primary">{conversionNavigation[0].label}</CtaLink>
@@ -16,7 +16,7 @@ export function SiteHeader() {
         <details className="menu-disclosure">
           <summary className="menu-button" aria-label="Buka menu navigasi">Menu</summary>
           <nav className="mobile-nav" aria-label="Navigasi mobile">
-            {[...primaryNavigation, ...conversionNavigation].map((item) => <a key={item.href} href={item.href}>{item.label}</a>)}
+            {[...primaryNavigation, ...conversionNavigation].map((item) => <a key={item.href + "-" + item.label} href={item.href}>{item.label}</a>)}
           </nav>
         </details>
       </div>

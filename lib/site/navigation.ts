@@ -7,6 +7,6 @@ export const primaryNavigation = [
 ] as const;
 
 export const conversionNavigation = [
-  { href: "/minta-penawaran/", label: "Minta Penawaran" },
+  { href: "/hubungi-sales/", label: "Minta Penawaran" },
   { href: "/hubungi-sales/", label: "Hubungi Sales" },
 ] as const;
